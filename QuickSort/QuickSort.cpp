@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Função que particiona o vetor
+int Particiona(int vetor[], int inicio, int fim) {
+    int aux; // Variável auxiliar para troca de posições
+    
+    int cont = inicio; // Contador para controlar a posicao do pivo
+
+    // Percorre o vetor da posição seguinte ao início até o fim
+    for (int i = inicio + 1; i <= fim; i++) 
+	{
+    	
+        // Verifica se o elemento atual é menor que o elemento inicial
+        if (vetor[i] < vetor[inicio]) 
+		{
+        	
+            cont++; // Incrementa o contador do pivo
+
+            // Troca os elementos de posição no vetor
+            aux = vetor[i];
+            vetor[i] = vetor[cont];
+            vetor[cont] = aux;
+        }
+    }
+
+    // Troca o elemento inicial com o elemento na posição do pivo
+    aux = vetor[inicio];
+    vetor[inicio] = vetor[cont];
+    vetor[cont] = aux;
+
+    return cont; // Retorna a posição do pivô
+}
+
+// Função principal do Quicksort
+void QuickSort(int vetor[], int inicio, int fim)
+ {
+    int pos;
+
+    // Condição de parada para a recursão
+    if (inicio < fim) 
+	{
+        pos = Particiona(vetor, inicio, fim); // Encontra a posição do pivô
+
+        // Chama recursivamente a função quicksort para as duas metades do vetor
+        
+        QuickSort(vetor, inicio, pos - 1); // Para a parte esquerda do pivô
+        
+        QuickSort(vetor, pos + 1, fim); // Para a parte direita do pivô
+    }
+}
+
+// Função main
+int main() 
+{
+    int vetor[] = {2, 0, 1,5,3,9,4,7}; // Vetor de entrada
+
+    int n = sizeof(vetor) / sizeof(int); // Calcula o tamanho do vetor 
+
+    QuickSort(vetor, 0, n - 1); // Chama a função quicksort
+
+    // Imprime o vetor ordenado
+    printf("\n\n\n");
+    for (int i = 0; i < n; i++)
+        printf("%d - ", vetor[i]);
+    printf("\n\n\n");
+
+    
+    return 0;
+}
+
