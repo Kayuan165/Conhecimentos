@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 25px;
+    border-bottom: 1px solid white;
+}
+
+.brand {
+    flex: 1;
+    text-align: center;
+}
+
+strong {
+    font-size: 40px;
+    color: black;
+}
+
+nav {
+    background-color: #eee;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.titulo {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    font-size: 30px;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.produto {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-size: 16px;
+}
+
+.produto:hover{
+    
+    width: 320px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+
+#InitialPage:hover{
+    background-color: #d1d1d1;
+
+    font-style: oblique;
+}
+#Coleções:hover{
+    background-color: #d1d1d1;
+
+    font-style: oblique;
+}
+#SobreNos:hover{
+    background-color: #d1d1d1;
+
+    font-style: oblique;
+}
+#Contato:hover{
+    background-color: #d1d1d1;
+
+    font-style: oblique;
+}
+
+#LuciAuree{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border: none;
+}

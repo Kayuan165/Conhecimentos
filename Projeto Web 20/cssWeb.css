@@ -1,0 +1,194 @@
+body{
+    background-color: white;
+    color: black;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex ;
+    justify-content: space-around ;     
+    align-items: center;    
+    flex-wrap: wrap;
+    
+    font-size: 25px;
+    font-weight: 1,3;
+    font-family: 'Times New Roman', Times, serif;    
+    border-bottom: 1px solid white;
+    height: 100;
+    margin-bottom: 40px;
+   
+}
+strong{
+    font-size: 65px;
+}
+.titulo{
+    text-align: center;
+    padding: 20px;
+    color: black;
+    font-size: 25px;
+}
+.container{
+    
+    height: 185px;    
+    margin-right: 10px;
+    border: 1px double gray;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    
+}
+
+nav {
+    background-color: #eee;
+    padding: 1em;
+    text-align: center;
+
+}
+
+nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #333;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.botao{
+    background-color: antiquewhite;
+    width: 150px;
+    height: 80px;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.botao:hover{
+    color: white;
+    background-color: black;
+    width: 150px;
+    height: 80;
+    box-shadow: 0 0 30px white;
+}
+ 
+.prata4 {
+    
+    padding: 20px;
+    margin: 10px;
+    color: whitesmoke;
+    background-color: black;
+    box-shadow: 0 0 10px white(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+}  
+
+.prata4.hover-img{
+    display: none;
+}
+.prata4:hover .normal-img2{
+    display: none;
+}
+.prata4:hover .hover-img2{
+    display: block;
+}
+
+
+
+.slider{
+    overflow: hidden;
+   
+
+}
+.slider > .slider-content{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+
+    transition: all 500ms ease;
+}
+
+.slider > .slider-content > .slider-item {
+    flex: 0 0 auto;
+    width: 100%;
+    background-color: black;
+    padding-top: 40px;
+    text-align: center;
+    
+
+}
+
+.slider > input:nth-child(1):checked ~ .slider-content{
+    transform: translateX(0%);
+}
+
+.slider > input:nth-child(2):checked ~ .slider-content{
+    transform: translateX(-100%);
+}
+.slider > input:nth-child(3):checked ~ .slider-content{
+    transform: translateX(-200%);
+}
+
+.slider > input:nth-child(4):checked ~ .slider-content{
+    transform: translateX(-300%);
+}
+
+.slider .hovertest{
+    display: none;
+}
+
+.slider:hover .hovertest{
+    display: inline;
+}
+
+.slider:hover .hovertest1{
+    display: none;
+}
+
+.nome{
+    color: white;
+    font-size: 25px;
+}
+
+#InitialPage:hover{
+    background-color: #d1d1d1;
+
+    font-style: oblique;
+}
+#Coleções:hover{
+    background-color: #d1d1d1;
+
+    font-style: oblique;
+}
+#SobreNos:hover{
+    background-color: #d1d1d1;
+
+    font-style: oblique;
+}
+#Contato:hover{
+    background-color: #d1d1d1;
+
+    font-style: oblique;
+}
+
+#LuciAuree{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border: none;
+}
+
+
+
+
+/*justify-content: space-evenly; /*linha nova*/

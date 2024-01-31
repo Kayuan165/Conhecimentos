@@ -1,0 +1,123 @@
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 25px;
+    border-bottom: 1px solid white;
+}
+
+strong {
+    font-size: 40px;
+    color: black;
+}
+
+nav {
+    background-color: #eee;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+button {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #654321;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 370px;
+}
+
+.brand {
+    flex: 1;
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    font-size: 25px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    display: block;
+    
+}
+
+.contato {
+    color: #333;
+
+    align-items: center;
+}
+
+#mensagem
+{
+    
+    height: 13px;
+    width: 150px
+}
+
+#InitialPage:hover{
+    background-color: #d1d1d1;
+
+    font-style: oblique;
+}
+#Coleções:hover{
+    background-color: #d1d1d1;
+
+    font-style: oblique;
+}
+#SobreNos:hover{
+    background-color: #d1d1d1;
+
+    font-style: oblique;
+}
+#Contato:hover{
+    background-color: #d1d1d1;
+
+    font-style: oblique;
+}
+
+
+#LuciAuree{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border: none;
+}
